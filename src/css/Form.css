@@ -1,0 +1,115 @@
+.main-div {
+  width: 450px;
+  padding-bottom: 40px;
+  margin: 40px auto 0 auto;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.705);
+  backdrop-filter: blur(10px);
+  border: 2px solid white;
+  color: black;
+  position: relative;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    right: -500px;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+#animation {
+  animation: slide 0.75s ease 0s 1 normal;
+  position: relative;
+}
+
+#animation > div:last-of-type a {
+  color: rgb(0, 81, 255);
+}
+
+#animation > div:last-of-type a:hover {
+  color: green;
+}
+
+#cross button {
+  background: black;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 0 25px 0 25px;
+  border: 2px solid black;
+}
+
+#cross button:hover {
+  background-color: inherit;
+  backdrop-filter: inherit;
+  border-radius: 25px;
+}
+
+#heading {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+#form {
+  margin: 0 40px;
+}
+
+#form p {
+  margin: 0;
+}
+
+#form form input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  transition: 0.1s;
+}
+
+#form form input:focus {
+  outline: none;
+  font-size: large;
+  transition: 0.1s;
+}
+
+#form form input {
+  margin-bottom: 60px;
+}
+
+#form form input:last-of-type {
+  margin-bottom: 0;
+}
+
+#form > div:first-of-type {
+  margin: 16px 0;
+}
+
+#form > div:first-of-type a {
+  color: inherit;
+}
+
+#form > div:first-of-type a:hover {
+  color: green;
+}
+
+#form button {
+  background: black;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 11px 0;
+  border: 2px solid black;
+}
+
+#form button:hover {
+  background-color: inherit;
+  backdrop-filter: inherit;
+}
+
+#form h3 {
+  margin: 0;
+}
